@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AdminMgrDB.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="AdminMgrDBStoreContainer">
+    <EntitySet Name="SysSampleSet" EntityType="AdminMgrDB.Store.SysSampleSet" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+  </EntityContainer>
+  <EntityType Name="SysSampleSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" StoreGeneratedPattern="Identity" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Age" Type="int" Nullable="true" />
+    <Property Name="Bir" Type="datetime" Nullable="true" />
+    <Property Name="Photo" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Note" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+</Schema>

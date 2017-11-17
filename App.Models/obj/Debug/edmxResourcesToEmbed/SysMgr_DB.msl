@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SysMgr_DBModelStoreContainer" CdmEntityContainer="SysMgr_DBEntities">
+    <EntitySetMapping Name="SysException">
+      <EntityTypeMapping TypeName="SysMgr_DBModel.SysException">
+        <MappingFragment StoreEntitySet="SysException">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HelpLink" ColumnName="HelpLink" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="StackTrace" ColumnName="StackTrace" />
+          <ScalarProperty Name="TargetSite" ColumnName="TargetSite" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysLog">
+      <EntityTypeMapping TypeName="SysMgr_DBModel.SysLog">
+        <MappingFragment StoreEntitySet="SysLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Operator" ColumnName="Operator" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Module" ColumnName="Module" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysModule">
+      <EntityTypeMapping TypeName="SysMgr_DBModel.SysModule">
+        <MappingFragment StoreEntitySet="SysModule">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EnglishName" ColumnName="EnglishName" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Iconic" ColumnName="Iconic" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="CreatePerson" ColumnName="CreatePerson" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="IsLast" ColumnName="IsLast" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysModuleOperate">
+      <EntityTypeMapping TypeName="SysMgr_DBModel.SysModuleOperate">
+        <MappingFragment StoreEntitySet="SysModuleOperate">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="KeyCode" ColumnName="KeyCode" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="IsValid" ColumnName="IsValid" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysRight">
+      <EntityTypeMapping TypeName="SysMgr_DBModel.SysRight">
+        <MappingFragment StoreEntitySet="SysRight">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Rightflag" ColumnName="Rightflag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysRightOperate">
+      <EntityTypeMapping TypeName="SysMgr_DBModel.SysRightOperate">
+        <MappingFragment StoreEntitySet="SysRightOperate">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RightId" ColumnName="RightId" />
+          <ScalarProperty Name="KeyCode" ColumnName="KeyCode" />
+          <ScalarProperty Name="IsValid" ColumnName="IsValid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysRole">
+      <EntityTypeMapping TypeName="SysMgr_DBModel.SysRole">
+        <MappingFragment StoreEntitySet="SysRole">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CreatePerson" ColumnName="CreatePerson" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysUser">
+      <EntityTypeMapping TypeName="SysMgr_DBModel.SysUser">
+        <MappingFragment StoreEntitySet="SysUser">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="TrueName" ColumnName="TrueName" />
+          <ScalarProperty Name="Card" ColumnName="Card" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="QQ" ColumnName="QQ" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="OtherContact" ColumnName="OtherContact" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Village" ColumnName="Village" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CreatePerson" ColumnName="CreatePerson" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="JoinDate" ColumnName="JoinDate" />
+          <ScalarProperty Name="Marital" ColumnName="Marital" />
+          <ScalarProperty Name="Political" ColumnName="Political" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="Native" ColumnName="Native" />
+          <ScalarProperty Name="School" ColumnName="School" />
+          <ScalarProperty Name="Professional" ColumnName="Professional" />
+          <ScalarProperty Name="Degree" ColumnName="Degree" />
+          <ScalarProperty Name="DepId" ColumnName="DepId" />
+          <ScalarProperty Name="PosId" ColumnName="PosId" />
+          <ScalarProperty Name="Expertise" ColumnName="Expertise" />
+          <ScalarProperty Name="JobState" ColumnName="JobState" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Attach" ColumnName="Attach" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="SysRoleSysUser" TypeName="SysMgr_DBModel.SysRoleSysUser" StoreEntitySet="SysRoleSysUser">
+      <EndProperty Name="SysRole">
+        <ScalarProperty Name="Id" ColumnName="SysRoleId" />
+      </EndProperty>
+      <EndProperty Name="SysUser">
+        <ScalarProperty Name="Id" ColumnName="SysUserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="P_Sys_GetRightOperate" FunctionName="SysMgr_DBModel.Store.P_Sys_GetRightOperate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SysMgr_DBModel.P_Sys_GetRightOperate_Result">
+          <ScalarProperty Name="KeyCode" ColumnName="KeyCode" />
+          <ScalarProperty Name="IsValid" ColumnName="IsValid" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="P_Sys_InsertSysRight" FunctionName="SysMgr_DBModel.Store.P_Sys_InsertSysRight" />
+    <FunctionImportMapping FunctionImportName="P_Sys_ClearUnusedRightOperate" FunctionName="SysMgr_DBModel.Store.P_Sys_ClearUnusedRightOperate" />
+    <FunctionImportMapping FunctionImportName="P_Sys_GetRightByRoleAndModule" FunctionName="SysMgr_DBModel.Store.P_Sys_GetRightByRoleAndModule">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SysMgr_DBModel.P_Sys_GetRightByRoleAndModule_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="KeyCode" ColumnName="KeyCode" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="isvalid" ColumnName="isvalid" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="RightId" ColumnName="RightId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="P_Sys_UpdateSysRightRightFlag" FunctionName="SysMgr_DBModel.Store.P_Sys_UpdateSysRightRightFlag" />
+    <EntitySetMapping Name="SysSample">
+      <EntityTypeMapping TypeName="SysMgr_DBModel.SysSample">
+        <MappingFragment StoreEntitySet="SysSample">
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Bir" ColumnName="Bir" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="P_Sys_GetRoleByUserId" FunctionName="SysMgr_DBModel.Store.P_Sys_GetRoleByUserId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SysMgr_DBModel.P_Sys_GetRoleByUserId_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CreatePerson" ColumnName="CreatePerson" />
+          <ScalarProperty Name="flag" ColumnName="flag" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="P_Sys_DeleteSysRoleSysUserByUserId" FunctionName="SysMgr_DBModel.Store.P_Sys_DeleteSysRoleSysUserByUserId" />
+    <FunctionImportMapping FunctionImportName="P_Sys_UpdateSysRoleSysUser" FunctionName="SysMgr_DBModel.Store.P_Sys_UpdateSysRoleSysUser" />
+  </EntityContainerMapping>
+</Mapping>
