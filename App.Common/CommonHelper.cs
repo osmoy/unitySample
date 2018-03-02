@@ -10,11 +10,7 @@ namespace App.Common
 {
     public class CommonHelper
     {
-        /// <summary>
-        /// md5加密
-        /// </summary>
-        /// <param name="content"></param>
-        /// <returns></returns>
+
         public static string ToMd5(string content)
         {
             MD5 md5Hasher = MD5.Create();
@@ -25,9 +21,6 @@ namespace App.Common
             return str;
         }
 
-        /// <summary>
-        /// 文件流md5
-        /// </summary>
         public static string ToMd5(Stream stream)
         {
             MD5 md5Hasher = MD5.Create();
@@ -38,9 +31,6 @@ namespace App.Common
             return str;
         }
 
-        /// <summary>
-        /// 批量转换为集合
-        /// </summary>
         public static IList<string> ToList(string ids)
         {
             IList<string> listId = new List<string>();
@@ -55,9 +45,6 @@ namespace App.Common
             return listId;
         }
 
-        /// <summary>
-        /// 枚举转集合
-        /// </summary>
         public static List<EnumEntity> EnumToList<T>()
         {
             List<EnumEntity> list = new List<EnumEntity>();

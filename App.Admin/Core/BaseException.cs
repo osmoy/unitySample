@@ -6,9 +6,6 @@ using System.Web;
 
 namespace App.Admin.Core
 {
-    /// <summary>
-    /// 这个异常处理写的太麻烦.
-    /// </summary>
     public class BaseException
     {
         #region 变量

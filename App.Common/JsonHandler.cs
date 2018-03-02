@@ -5,9 +5,6 @@ using System.Text;
 
 namespace App.Common
 {
-    /// <summary>
-    /// 统一处理返回的js【相当于另一个jsonresult】
-    /// </summary>
     public class JsonHandler
     {
         public static JsonMessage CreateMessage(int type, string message, string value)

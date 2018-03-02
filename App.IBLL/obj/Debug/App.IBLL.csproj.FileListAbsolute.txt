@@ -35,3 +35,13 @@ F:\tools\project\unitySample-master\App.IBLL\obj\Debug\App.IBLL.csprojResolveAss
 F:\tools\project\unitySample-master\App.IBLL\obj\Debug\App.IBLL.dll
 F:\tools\project\unitySample-master\App.IBLL\obj\Debug\App.IBLL.pdb
 F:\tools\project\unitySample-master\App.IBLL\bin\Debug\LitJson.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IBLL\bin\Debug\App.IBLL.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IBLL\bin\Debug\App.IBLL.pdb
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IBLL\bin\Debug\App.Common.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IBLL\bin\Debug\App.Models.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IBLL\bin\Debug\LitJson.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IBLL\bin\Debug\App.Common.pdb
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IBLL\bin\Debug\App.Models.pdb
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IBLL\obj\Debug\App.IBLL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IBLL\obj\Debug\App.IBLL.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IBLL\obj\Debug\App.IBLL.pdb

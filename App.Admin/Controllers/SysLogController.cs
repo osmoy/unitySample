@@ -11,9 +11,7 @@ using App.Admin.Filters;
 
 namespace App.Admin.Controllers
 {
-    /// <summary>
-    /// 操作日志
-    /// </summary>    
+
     [SupportFilter]
     public class SysLogController : BaseController
     {

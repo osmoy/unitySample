@@ -13,9 +13,6 @@ namespace App.Admin.Controllers
     [SupportFilter]
     public class SysRoleController : BaseController
     {
-        /// <summary>
-        /// 业务层注入
-        /// </summary>
         [Dependency]
         public IBLL.ISysRoleBLL m_BLL { get; set; }
         Common.ValidationErrors errors = Core.Globle.errors;
@@ -156,11 +153,6 @@ namespace App.Admin.Controllers
         #endregion
 
 
-        /*
-         * http://www.cnblogs.com/ymnets/p/3484658.html     将模块先分配给角色..
-         * http://www.cnblogs.com/ymnets/p/3546629.html     将权限授权给角色
-         * 
-         * **/
 
 
     }

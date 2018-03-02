@@ -8,10 +8,6 @@ namespace App.DAL
 {
     public class AccountRepository : IDAL.IAccountRepository
     {
-        //public System.Data.Entity.DbContext db
-        //{
-        //    get { return new SysMgr_DBEntities(); }
-        //}
         public SysUser Login(string username, string pwd)
         {
             using (var db = new SysMgr_DBEntities())

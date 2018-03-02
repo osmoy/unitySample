@@ -16,11 +16,6 @@ namespace App.DAL
             }
         }
 
-        /// <summary>
-        /// 获取列表
-        /// </summary>
-        /// <param name="db">数据库上下文</param>
-        /// <returns>数据列表</returns>
         public IQueryable<SysModule> GetList()
         {
             var list = db.Set<Models.SysModule>().AsQueryable();
@@ -33,11 +28,7 @@ namespace App.DAL
             #endregion
             return list;
         }
-        /// <summary>
-        /// 创建一个实体
-        /// </summary>
-        /// <param name="db">数据库上下文</param>
-        /// <param name="entity">实体</param>
+
         public int Create(SysModule entity)
         {
             using (SysMgr_DBEntities db = new SysMgr_DBEntities())
@@ -46,11 +37,7 @@ namespace App.DAL
                 return db.SaveChanges();
             }
         }
-        /// <summary>
-        /// 删除一个实体
-        /// </summary>
-        /// <param name="db">数据库上下文</param>
-        /// <param name="entity">主键ID</param>
+
         public int Delete(string id)
         {
             using (SysMgr_DBEntities db = new SysMgr_DBEntities())
@@ -65,11 +52,6 @@ namespace App.DAL
             }
         }
 
-        /// <summary>
-        /// 修改一个实体
-        /// </summary>
-        /// <param name="db">数据库上下文</param>
-        /// <param name="entity">实体</param>
         public int Edit(SysModule entity)
         {
             using (SysMgr_DBEntities db = new SysMgr_DBEntities())
@@ -80,11 +62,7 @@ namespace App.DAL
                 return db.SaveChanges();
             }
         }
-        /// <summary>
-        /// 获得一个实体
-        /// </summary>
-        /// <param name="id">id</param>
-        /// <returns>实体</returns>
+
         public SysModule GetById(string id)
         {
             using (SysMgr_DBEntities db = new SysMgr_DBEntities())
@@ -92,11 +70,7 @@ namespace App.DAL
                 return db.SysModule.SingleOrDefault(a => a.Id == id);
             }
         }
-        /// <summary>
-        /// 判断一个实体是否存在
-        /// </summary>
-        /// <param name="id">id</param>
-        /// <returns>是否存在 true or false</returns>
+
         public bool IsExist(string id)
         {
             using (SysMgr_DBEntities db = new SysMgr_DBEntities())
@@ -108,12 +82,6 @@ namespace App.DAL
             }
         }
 
-        /// <summary>
-        /// 根据用户权限查询菜单列表
-        /// </summary>
-        /// <param name="personId"></param>
-        /// <param name="moduleId"></param>
-        /// <returns></returns>
         public List<SysModule> GetMenuByPersonId(string personId, string moduleId)
         {            
             using (var db = new SysMgr_DBEntities())

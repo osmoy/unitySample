@@ -8,10 +8,7 @@ namespace App.Common
 {
     public class ResultHelper
     {
-        /// <summary>
-        /// 创建一个全球唯一的32位ID
-        /// </summary>
-        /// <returns>ID串</returns>
+
         public static string NewId
         {
             get
@@ -30,12 +27,7 @@ namespace App.Common
                 return id;
             }
         }
-        /// <summary>
-        /// 截取字符串
-        /// </summary>
-        /// <param name="value">字符串</param>
-        /// <param name="length">剩下长度</param>
-        /// <returns>指定字符串并加...</returns>
+
         public static string SubValue(string value, int length)
         {
             if (value.Length > length)
@@ -44,7 +36,7 @@ namespace App.Common
             }
             else { return NoHtml(value); }
         }
-        //还原的时候
+
         public static string InputText(string inputString)
         {
             if ((inputString != null) && (inputString != String.Empty))
@@ -70,7 +62,7 @@ namespace App.Common
             }
 
         }
-        //添加的时候
+
         public static string OutputText(string outputString)
         {
             if ((outputString != null) && (outputString != String.Empty))
@@ -93,16 +85,11 @@ namespace App.Common
             }
         }
 
-        /// <summary>
-        /// 去除HTML标记
-        /// </summary>
-        /// <param name="NoHTML">包括HTML的源码 </param>
-        /// <returns>已经去除后的文字</returns>
         public static string NoHtml(string Htmlstring)
         {
-            //删除脚本
+
             Htmlstring = Regex.Replace(Htmlstring, @"<script[^>]*?>.*?</script>", "", RegexOptions.IgnoreCase);
-            //删除HTML
+
             Htmlstring = Regex.Replace(Htmlstring, @"<(.[^>]*)>", "", RegexOptions.IgnoreCase);
             Htmlstring = Regex.Replace(Htmlstring, @"([\r\n])[\s]+", "", RegexOptions.IgnoreCase);
             Htmlstring = Regex.Replace(Htmlstring, @"-->", "", RegexOptions.IgnoreCase);
@@ -128,11 +115,7 @@ namespace App.Common
             return Htmlstring;
         }
 
-        /// <summary>
-        /// 格式化文本（防止SQL注入）
-        /// </summary>
-        /// <param name="str"></param>
-        /// <returns></returns>
+
         public static string Formatstr(string html)
         {
             System.Text.RegularExpressions.Regex regex1 = new System.Text.RegularExpressions.Regex(@"<script[\s\S]+</script *>", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
@@ -143,10 +126,10 @@ namespace App.Common
             System.Text.RegularExpressions.Regex regex10 = new System.Text.RegularExpressions.Regex(@"select", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
             System.Text.RegularExpressions.Regex regex11 = new System.Text.RegularExpressions.Regex(@"update", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
             System.Text.RegularExpressions.Regex regex12 = new System.Text.RegularExpressions.Regex(@"delete", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
-            html = regex1.Replace(html, ""); //过滤<script></script>标记
-            html = regex2.Replace(html, ""); //过滤href=javascript: (<A>) 属性
-            html = regex3.Replace(html, " _disibledevent="); //过滤其它控件的on...事件
-            html = regex4.Replace(html, ""); //过滤iframe
+            html = regex1.Replace(html, ""); 
+            html = regex2.Replace(html, ""); 
+            html = regex3.Replace(html, " _disibledevent="); 
+            html = regex4.Replace(html, ""); 
             html = regex10.Replace(html, "s_elect");
             html = regex11.Replace(html, "u_pudate");
             html = regex12.Replace(html, "d_elete");
@@ -155,11 +138,6 @@ namespace App.Common
             return html;
         }
 
-        /// <summary>
-        /// 检查SQL语句合法性
-        /// </summary>
-        /// <param name="sql"></param>
-        /// <returns></returns>
         public static bool ValidateSQL(string sql, ref string msg)
         {
             if (sql.ToLower().IndexOf("delete") > 0)
@@ -181,7 +159,6 @@ namespace App.Common
             return true;
         }
 
-        //获取当前时间
         public static DateTime NowTime
         {
             get
@@ -190,11 +167,6 @@ namespace App.Common
             }
         }
 
-        /// <summary>
-        /// 将日期转换成字符串
-        /// </summary>
-        /// <param name="dt">日期</param>
-        /// <returns>字符串</returns>
         public static string DateTimeConvertString(DateTime? dt)
         {
             if (dt == null)
@@ -206,11 +178,7 @@ namespace App.Common
                 return Convert.ToDateTime(dt.ToString()).ToShortDateString();
             }
         }
-        /// <summary>
-        /// 将字符串转换成日期
-        /// </summary>
-        /// <param name="str">字符串</param>
-        /// <returns>日期</returns>
+
         public static DateTime? StringConvertDatetime(string str)
         {
             if (str == null)

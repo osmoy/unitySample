@@ -29,3 +29,13 @@ F:\tools\project\unitySample-master\App.DAL\bin\Debug\App.Models.pdb
 F:\tools\project\unitySample-master\App.DAL\obj\Debug\App.DAL.csprojResolveAssemblyReference.cache
 F:\tools\project\unitySample-master\App.DAL\obj\Debug\App.DAL.dll
 F:\tools\project\unitySample-master\App.DAL\obj\Debug\App.DAL.pdb
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.DAL\bin\Debug\App.DAL.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.DAL\bin\Debug\App.DAL.pdb
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.DAL\bin\Debug\App.IDAL.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.DAL\bin\Debug\App.Models.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.DAL\bin\Debug\App.IDAL.pdb
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.DAL\bin\Debug\App.Models.pdb
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.DAL\obj\Debug\App.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.DAL\obj\Debug\App.DAL.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.DAL\obj\Debug\App.DAL.pdb

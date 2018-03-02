@@ -127,7 +127,7 @@ namespace App.BLL
                     errors.Add(Suggestion.Disable);
                     return false;
                 }
-                //entity.Id = model.Id;
+
                 entity.Name = model.Name;
                 entity.Description = model.Description;
                 entity.CreateTime = model.CreateTime;

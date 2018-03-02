@@ -31,9 +31,7 @@ namespace App.Admin.Controllers
         }
 
         #region 主页面       
-        /// <summary>
-        /// 获取角色列表
-        /// </summary>
+
         [SupportFilter(ActionName = "Index")]
         [HttpPost]
         public JsonResult GetRoleList(GridPager pager)
@@ -57,11 +55,7 @@ namespace App.Admin.Controllers
 
             return Json(json);
         }
-
-        /// <summary>
-        /// 获取模组列表
-        /// </summary>
-        /// <param name="id"></param>        
+      
         [SupportFilter(ActionName = "Index")]
         [HttpPost]
         public JsonResult GetModelList(string id)
@@ -89,9 +83,6 @@ namespace App.Admin.Controllers
             return Json(json);
         }
 
-        /// <summary>
-        /// 根据角色与模块得出权限
-        /// </summary>
         [SupportFilter(ActionName = "Index")]
         [HttpPost]
         public JsonResult GetRightByRoleAndModule(GridPager pager, string roleId, string moduleId)
@@ -118,7 +109,6 @@ namespace App.Admin.Controllers
         }
         #endregion
 
-        //保存
         [HttpPost]
         [SupportFilter(ActionName = "Save")]
         public int UpdateRight(SysRightOperateModel model)

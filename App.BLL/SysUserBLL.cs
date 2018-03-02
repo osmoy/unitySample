@@ -326,9 +326,6 @@ namespace App.BLL
             return m_Rep.IsExist(id);
         }
 
-        /// <summary>
-        /// 根据用户查询角色信息
-        /// </summary>
         public IQueryable<P_Sys_GetRoleByUserId_Result> GetRoleByUserId(ref GridPager pager, string userId)
         {
             IQueryable<P_Sys_GetRoleByUserId_Result> queryData = m_Rep.GetRoleByUserId(userId);
@@ -338,9 +335,6 @@ namespace App.BLL
             return queryData.Skip((pager.page - 1) * pager.rows).Take(pager.rows);
         }
 
-        /// <summary>
-        /// 设置用户角色
-        /// </summary>
         public bool UpdateSysRoleSysUser(string userId, string[] roleIds)
         {
             try

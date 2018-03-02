@@ -10,9 +10,6 @@ using System.Web.Mvc;
 
 namespace App.Core
 {
-    /// <summary>
-    /// unity 引用解析类
-    /// </summary>
     public class UnityDependencyResolver : IDependencyResolver
     {
         private const string HttpContextKey = "perRequestContainer";

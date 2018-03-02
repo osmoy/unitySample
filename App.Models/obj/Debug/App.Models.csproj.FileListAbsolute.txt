@@ -32,3 +32,11 @@ F:\tools\project\unitySample-master\App.Models\bin\Debug\EntityFramework.SqlServ
 F:\tools\project\unitySample-master\App.Models\obj\Debug\App.Models.dll
 F:\tools\project\unitySample-master\App.Models\obj\Debug\App.Models.pdb
 F:\tools\project\unitySample-master\App.Models\obj\Debug\App.Models.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Models\bin\Debug\App.Models.dll.config
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Models\bin\Debug\App.Models.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Models\bin\Debug\App.Models.pdb
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Models\obj\Debug\App.Models.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Models\obj\Debug\App.Models.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Models\obj\Debug\App.Models.pdb

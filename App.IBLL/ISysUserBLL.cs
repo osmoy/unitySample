@@ -9,9 +9,6 @@ namespace App.IBLL
 {
     public interface ISysUserBLL
     {
-        /// <summary>
-        /// 获取当前用户权限列表
-        /// </summary>
         List<Models.Sys.permModel> GetPermission(string accountid, string controller);
 
         List<SysUserModel> GetList(ref GridPager pager, string queryStr);
@@ -22,14 +19,8 @@ namespace App.IBLL
         SysUserModel GetById(string id);
         bool IsExist(string id);
 
-        /// <summary>
-        /// 根据用户查询角色信息
-        /// </summary>
         IQueryable<Models.P_Sys_GetRoleByUserId_Result> GetRoleByUserId(ref GridPager pager, string userId);
 
-        /// <summary>
-        /// 设置用户角色
-        /// </summary>
         bool UpdateSysRoleSysUser(string userId, string[] roleIds);
 
     }

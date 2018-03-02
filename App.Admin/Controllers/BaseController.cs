@@ -8,7 +8,7 @@ using App.Models.Sys;
 
 namespace App.Admin.Controllers
 {
-    ///基类，校验登录/访问权限
+  
     public class BaseController : Controller
     {
         protected AccountModel currentuser = null;
@@ -21,10 +21,7 @@ namespace App.Admin.Controllers
             }
             currentuser = Session["Account"] as AccountModel;
         }
-        /// <summary>
-        /// 获取当前用户Id
-        /// </summary>
-        /// <returns></returns>
+
         public string GetUserId()
         {
             if (Session["Account"] != null)
@@ -37,10 +34,7 @@ namespace App.Admin.Controllers
                 return "";
             }
         }
-        /// <summary>
-        /// 获取当前用户Name
-        /// </summary>
-        /// <returns></returns>
+
         public string GetUserTrueName()
         {
             if (Session["Account"] != null)
@@ -53,10 +47,7 @@ namespace App.Admin.Controllers
                 return "";
             }
         }
-        /// <summary>
-        /// 获取当前用户信息
-        /// </summary>
-        /// <returns>用户信息</returns>
+
         public AccountModel GetAccount()
         {
             if (Session["Account"] != null)
@@ -109,11 +100,6 @@ namespace App.Admin.Controllers
         //}
         #endregion
 
-        /// <summary>
-        /// 检查SQL语句合法性
-        /// </summary>
-        /// <param name="sql"></param>
-        /// <returns></returns>
         public bool ValidateSQL(string sql, ref string msg)
         {
             if (sql.ToLower().IndexOf("delete") > 0)
@@ -135,10 +121,6 @@ namespace App.Admin.Controllers
             return true;
         }
 
-        /// <summary>
-        /// 获取当前页面能操作的权限
-        /// </summary>
-        /// <returns>权限列表</returns>
         public List<permModel> GetPermission()
         {
             string filePath = HttpContext.Request.FilePath;

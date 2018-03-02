@@ -12,8 +12,6 @@ namespace App.Core
 {
     public class DependencyRegisterType
     {
-        ///系统注入
-        ///各模块注入
         public static void Container_Sys(ref UnityContainer container)
         {
             container.RegisterType<ISysSampleBLL, SysSampleBLL>();//样例

@@ -176,7 +176,7 @@ namespace App.Admin.Controllers
         }
         #endregion
 
-        #region 设置用户角色
+        #region MyRegion
         [SupportFilter(ActionName = "Allot")]
         public ActionResult GetRoleByUser(string userId)
         {
@@ -207,11 +207,6 @@ namespace App.Admin.Controllers
             return Json(jsonData);
         }
 
-        /// <summary>
-        /// 提交保存
-        /// </summary>
-        /// <param name="userId">用户id</param>
-        /// <param name="roleIds">角色id集合</param>
         [SupportFilter(ActionName = "Save")]
         [HttpPost]
         public ActionResult UpdateUserRoleByUserId(string userId, string roleIds)
@@ -231,12 +226,7 @@ namespace App.Admin.Controllers
         }
         #endregion
 
-       
 
-        /*
-         * http://www.cnblogs.com/ymnets/p/3559100.html     源码发14讲(14讲包含了素材js等通用元素)，数据库是17讲
-         * 
-         * **/
 
     }
 }

@@ -19,12 +19,7 @@ namespace App.Admin.Controllers
         {
             return View();
         }
-
-        /// <summary>
-        /// 获取用户菜单列表
-        /// </summary>
-        /// <param name="id">所属</param>
-        /// <returns>树</returns>     
+ 
         public ActionResult GetTree(string id)
         {
             var menus = homeBLL.GetMenuByPersonId(base.GetUserId(), id);

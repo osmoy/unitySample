@@ -17,12 +17,6 @@ namespace App.BLL
         [Dependency]
         public IDAL.ISysModuleOperateRepository m_Rep { get; set; }
 
-        /// <summary>
-        /// 获取操作列表
-        /// </summary>
-        /// <param name="pager"></param>
-        /// <param name="mid"></param>
-        /// <returns></returns>
         public List<SysModuleOperateModel> GetList(ref GridPager pager, string mid)
         {
             IQueryable<SysModuleOperate> queryData = m_Rep.GetList().Where(a => a.ModuleId == mid);

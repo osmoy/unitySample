@@ -11,9 +11,7 @@ using System.Web.Mvc;
 
 namespace App.Admin.Controllers
 {
-    /// <summary>
-    /// 异常日志
-    /// </summary>
+
     public class SysExceptionController : BaseController
     {
         [Dependency]
@@ -75,7 +73,7 @@ namespace App.Admin.Controllers
         {
             try
             {
-                var errors = Core.Globle.errors;    //引用删除异常..
+                var errors = Core.Globle.errors;
                 exceptionBLL.Delete(new string[] { id });
                 //TODO 肯定是要继承基类，获取当前登录信息..
                 LogHandler.WriteServiceLog(base.GetUserTrueName(), "Id:" + id, "成功", "删除", "日志模块");
@@ -89,36 +87,12 @@ namespace App.Admin.Controllers
         }
         #endregion
 
-        /// <summary>
-        /// 显示错误页面
-        /// </summary>
-        /// <returns></returns>
         public ActionResult Error()
         {
             Core.BaseException ex = new Core.BaseException();
             return View(ex);
         }
 
-        /*
-         * http://www.cnblogs.com/ymnets/p/3436579.html  系统日志和异常的处理Ⅱ
-         * 
-         * http://www.cnblogs.com/ymnets/p/3435754.html  优化
-         * 
-         * http://www.cnblogs.com/ymnets/p/3452364.html  权限管理
-         * 
-         * http://www.cnblogs.com/ymnets/p/3452407.html  判断是否有操作权限
-         * 
-         * select * from SysUser
-
-            select * from SysRole	--
-
-            select * from SysRoleSysUser
-
-            select * from SysRight	--将模块授权给【角色】，只有被模块授权的角色才能设置权限【Id】
-
-            select * from SysRightOperate --这个是角色拥有的操作码         
-            select * from SysModuleOperate --模块的操作码表，我把每个Action都看作是一个操作码
-         *
-         * */
+       
     }
 }

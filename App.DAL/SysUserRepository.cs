@@ -73,17 +73,11 @@ namespace App.DAL
             return false;
         }
 
-        /// <summary>
-        /// 根据用户查询角色信息
-        /// </summary>
         public IQueryable<P_Sys_GetRoleByUserId_Result> GetRoleByUserId(string userId)
         {
             return new SysMgr_DBEntities().P_Sys_GetRoleByUserId(userId).AsQueryable();
         }
 
-        /// <summary>
-        /// 设置用户角色
-        /// </summary>
         public void UpdateSysRoleSysUser(string userId, string[] roleIds)
         {
             using (var db = new SysMgr_DBEntities())

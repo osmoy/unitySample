@@ -7,9 +7,7 @@ namespace App.Admin.Core
 {
     public static class Globle
     {
-        /// <summary>
-        /// 静态全局变量
-        /// </summary>
+
         public static Common.ValidationErrors errors
         {
             get

@@ -15,12 +15,7 @@ namespace App.BLL
 
         [Dependency]
         public IDAL.ISysLogRepository logRepository { get; set; }
-
-        /// <summary>
-        /// 获取列表
-        /// </summary>
-        /// <param name="pager">JQgrid分页</param>
-        /// <param name="queryStr">搜索条件</param>        
+   
         public List<SysLog> GetList(ref Common.GridPager pager, string queryStr)
         {            
             List<SysLog> query = null;
@@ -45,11 +40,6 @@ namespace App.BLL
             return query;
         }
 
-        /// <summary>
-        /// 通过id查询实体
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
         public SysLog GetById(string id)
         {
             return logRepository.GetById(id);

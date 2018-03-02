@@ -26,3 +26,10 @@ F:\tools\project\unitySample-master\App.IDAL\bin\Debug\App.Models.pdb
 F:\tools\project\unitySample-master\App.IDAL\obj\Debug\App.IDAL.csprojResolveAssemblyReference.cache
 F:\tools\project\unitySample-master\App.IDAL\obj\Debug\App.IDAL.dll
 F:\tools\project\unitySample-master\App.IDAL\obj\Debug\App.IDAL.pdb
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IDAL\bin\Debug\App.IDAL.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IDAL\bin\Debug\App.IDAL.pdb
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IDAL\bin\Debug\App.Models.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IDAL\bin\Debug\App.Models.pdb
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IDAL\obj\Debug\App.IDAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IDAL\obj\Debug\App.IDAL.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.IDAL\obj\Debug\App.IDAL.pdb

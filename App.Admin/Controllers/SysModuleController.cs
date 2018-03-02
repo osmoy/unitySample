@@ -13,9 +13,7 @@ namespace App.Admin.Controllers
     [SupportFilter]
     public class SysModuleController : BaseController
     {
-        /// <summary>
-        /// 业务层注入
-        /// </summary>
+
         [Dependency]
         public IBLL.ISysModuleBLL m_BLL { get; set; }
         [Dependency]
@@ -31,9 +29,6 @@ namespace App.Admin.Controllers
         }
 
         #region 获取列表 +JsonResult GetList(string id)
-        /// <summary>
-        /// 获取列表
-        /// </summary>
         [SupportFilter(ActionName = "Index")]
         [HttpPost]
         public JsonResult GetList(string id)
@@ -269,9 +264,6 @@ namespace App.Admin.Controllers
 
         #endregion
 
-        /*
-         * 编辑 删除弹出提示框
-         */
 
 
     }

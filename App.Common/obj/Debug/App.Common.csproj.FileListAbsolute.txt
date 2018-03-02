@@ -20,3 +20,11 @@ F:\tools\project\unitySample-master\App.Common\obj\Debug\App.Common.csprojResolv
 F:\tools\project\unitySample-master\App.Common\bin\Debug\App.Models.dll
 F:\tools\project\unitySample-master\App.Common\bin\Debug\App.Models.pdb
 F:\tools\project\unitySample-master\App.Common\bin\Debug\LitJson.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Common\bin\Debug\App.Common.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Common\bin\Debug\App.Common.pdb
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Common\bin\Debug\App.Models.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Common\bin\Debug\LitJson.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Common\bin\Debug\App.Models.pdb
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Common\obj\Debug\App.Common.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Common\obj\Debug\App.Common.dll
+C:\Users\Administrator\Desktop\新建文件夹\11\unitySample\App.Common\obj\Debug\App.Common.pdb

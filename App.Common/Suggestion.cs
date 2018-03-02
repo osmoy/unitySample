@@ -5,9 +5,7 @@ using System.Text;
 
 namespace App.Common
 {
-    /// <summary>
-    /// 统一处理提示信息
-    /// </summary>
+
     public static class Suggestion
     {
         public static string PlaseChooseToOperatingRecords { get { return "请选择要操作的记录"; } }

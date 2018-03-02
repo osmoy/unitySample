@@ -17,15 +17,9 @@ namespace App.BLL
     {
         DbContext db = new SysMgr_DBEntities();
 
-        [Dependency] //要注入的属性..
+        [Dependency]
         public ISysSampleRepository Rep { get; set; }
 
-        /// <summary>
-        /// 获取列表
-        /// </summary>
-        /// <param name="pager">JQgrid分页</param>
-        /// <param name="queryStr">搜索条件</param>
-        /// <returns>列表</returns>
         public List<SysSampleModel> GetList(ref GridPager pager, string queryStr)
         {
             IQueryable<SysSample> queryData = Rep.GetList();
@@ -99,12 +93,6 @@ namespace App.BLL
             return modelList;
         }
 
-        /// <summary>
-        /// 创建一个实体
-        /// </summary>
-        /// <param name="errors">持久的错误信息</param>
-        /// <param name="model">模型</param>
-        /// <returns>是否成功，失败向数据库写入异常信息</returns>
         #region old
         //public bool Create(SysSampleModel model)
         //{
@@ -167,12 +155,6 @@ namespace App.BLL
             }            
         }
 
-        /// <summary>
-        /// 删除一个实体
-        /// </summary>
-        /// <param name="errors">持久的错误信息</param>
-        /// <param name="id">id</param>
-        /// <returns>是否成功</returns>
         public bool Delete(int id)
         {
             try
@@ -192,12 +174,6 @@ namespace App.BLL
             }
         }
 
-        /// <summary>
-        /// 修改一个实体
-        /// </summary>
-        /// <param name="errors">持久的错误信息</param>
-        /// <param name="model">模型</param>
-        /// <returns>是否成功</returns>
         public bool Edit(SysSampleModel model)
         {
             try
@@ -229,11 +205,6 @@ namespace App.BLL
             }
         }
 
-        /// <summary>
-        /// 判断是否存在实体
-        /// </summary>
-        /// <param name="id">主键ID</param>
-        /// <returns>是否存在</returns>
         public bool IsExists(string id)
         {
             if (db.Set<SysSample>().SingleOrDefault(a => a.Id == Convert.ToInt32(id)) != null)
@@ -242,11 +213,7 @@ namespace App.BLL
             }
             return false;
         }
-        /// <summary>
-        /// 根据ID获得一个实体
-        /// </summary>
-        /// <param name="id">id</param>
-        /// <returns>实体</returns>
+
         public SysSampleModel GetById(int id)
         {
             if (IsExist(id))
@@ -269,11 +236,6 @@ namespace App.BLL
             }
         }
 
-        /// <summary>
-        /// 判断一个实体是否存在
-        /// </summary>
-        /// <param name="id">id</param>
-        /// <returns>是否存在 true or false</returns>
         public bool IsExist(int id)
         {
             return Rep.IsExist(id);

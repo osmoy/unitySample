@@ -9,19 +9,12 @@ using Microsoft.Practices.Unity;
 
 namespace App.BLL.Core
 {
-    /// <summary>
-    /// 写入异常错误
-    /// </summary>
-    /// <param name="ex">异常</param>
+
     public static class ExceptionHander
     {
         //[Dependency]
         //public static IDAL.ISysExceptionRepository SysException { get; set; }
 
-        /// <summary>
-        /// 加入异常日志
-        /// </summary>
-        /// <param name="ex">异常</param>
         public static void WriteException(Exception ex)
         {
             try

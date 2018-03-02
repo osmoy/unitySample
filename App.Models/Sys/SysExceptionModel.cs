@@ -6,9 +6,6 @@ using System.Text;
 
 namespace App.Models.Sys
 {
-    /// <summary>
-    /// 异常处理类
-    /// </summary>
     public class SysExceptionModel
     {
         [Display(Name = "ID")]

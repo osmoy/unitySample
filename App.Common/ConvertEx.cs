@@ -9,21 +9,11 @@ namespace System
 {
     public static class ConvertEx
     {
-        /// <summary>
-        /// 得到对象的 Int 类型的值，默认值0
-        /// </summary>
-        /// <param name="Value">要转换的值</param>
-        /// <returns>如果对象的值可正确返回， 返回对象转换的值 ，否则， 返回默认值0</returns>
         public static int ToInt(this object Value)
         {
             return ToInt(Value, 0);
         }
-        /// <summary>
-        /// 得到对象的 Int 类型的值，默认值0
-        /// </summary>
-        /// <param name="Value">要转换的值</param>
-        /// <param name="defaultValue">如果转换失败，返回的默认值</param>
-        /// <returns>如果对象的值可正确返回， 返回对象转换的值 ，否则， 返回默认值0</returns>
+
         public static int ToInt(this object Value, int defaultValue)
         {
             if (Value == null) return defaultValue;
@@ -47,21 +37,11 @@ namespace System
             }
         }
 
-        /// <summary>
-        /// 得到对象的 String 类型的值，默认值string.Empty
-        /// </summary>
-        /// <param name="Value">要转换的值</param>
-        /// <returns>如果对象的值可正确返回， 返回对象转换的值 ，否则， 返回默认值string.Empty</returns>
         public static string GetString(this object Value)
         {
             return GetString(Value, string.Empty);
         }
-        /// <summary>
-        /// 得到对象的 String 类型的值，默认值string.Empty
-        /// </summary>
-        /// <param name="Value">要转换的值</param>
-        /// <param name="defaultValue">如果转换失败，返回的默认值</param>
-        /// <returns>如果对象的值可正确返回， 返回对象转换的值 ，否则， 返回默认值 。</returns>
+
         public static string GetString(this object Value, string defaultValue)
         {
             if (Value == null) return defaultValue;
@@ -89,21 +69,11 @@ namespace System
             return retVal;
         }
 
-        /// <summary>
-        /// 得到对象的 DateTime 类型的值，默认值为DateTime.MinValue
-        /// </summary>
-        /// <param name="Value">要转换的值</param>
-        /// <returns>如果对象的值可正确返回， 返回对象转换的值 ，否则， 返回的默认值为DateTime.MinValue </returns>
         public static DateTime ToDateTime(this object Value)
         {
             return ToDateTime(Value, DateTime.MinValue);
         }
-        /// <summary>
-        /// 得到对象的 DateTime 类型的值，默认值为DateTime.MinValue
-        /// </summary>
-        /// <param name="Value">要转换的值</param>
-        /// <param name="defaultValue">如果转换失败，返回默认值为DateTime.MinValue</param>
-        /// <returns>如果对象的值可正确返回， 返回对象转换的值 ，否则， 返回的默认值为DateTime.MinValue</returns>
+
         public static DateTime ToDateTime(this object Value, DateTime defaultValue)
         {
             if (Value == null) return defaultValue;
@@ -136,21 +106,11 @@ namespace System
             return defaultValue;
         }
 
-        /// <summary>
-        /// 得到对象的布尔类型的值，默认值false
-        /// </summary>
-        /// <param name="Value">要转换的值</param>
-        /// <returns>如果对象的值可正确返回， 返回对象转换的值 ，否则， 返回默认值false</returns>
         public static bool ToBoolen(this object Value)
         {
             return ToBoolen(Value, false);
         }
-        /// <summary>
-        /// 得到对象的 Bool 类型的值，默认值false
-        /// </summary>
-        /// <param name="Value">要转换的值</param>
-        /// <param name="defaultValue">如果转换失败，返回的默认值</param>
-        /// <returns>如果对象的值可正确返回， 返回对象转换的值 ，否则， 返回默认值false</returns>
+
         public static bool ToBoolen(this object Value, bool defaultValue)
         {
             if (Value == null) return defaultValue;
@@ -183,11 +143,6 @@ namespace System
             else return defaultValue;
         }
 
-        /// <summary>
-        /// 检测 GuidValue 是否包含有效的值，默认值Guid.Empty
-        /// </summary>
-        /// <param name="GuidValue">要转换的值</param>
-        /// <returns>如果对象的值可正确返回， 返回对象转换的值 ，否则， 返回默认值Guid.Empty</returns>
         public static Guid GetGuid(string GuidValue)
         {
             try
@@ -196,11 +151,7 @@ namespace System
             }
             catch { return Guid.Empty; }
         }
-        /// <summary>
-        /// 检测 Value 是否包含有效的值，默认值false
-        /// </summary>
-        /// <param name="Value"> 传入的值</param>
-        /// <returns> 包含，返回true，不包含，返回默认值false</returns>
+
         public static bool HasValue(this string Value)
         {
             if (Value != null)
@@ -210,17 +161,11 @@ namespace System
             else return false;
         }
 
-        /// <summary>
-        /// 校验非空
-        /// </summary>
         public static bool IsNullOrEmpty(this string str)
         {
             return string.IsNullOrEmpty(str);
         }
 
-        /// <summary>
-        /// 序列化json
-        /// </summary>
         public static string ToJson(this object obj)
         {
             #region Json.NET
@@ -242,12 +187,9 @@ namespace System
             return JsonMapper.ToJson(obj);
         }
 
-        /// <summary>
-        /// 反序列化为对象
-        /// </summary>
         public static T ToObject<T>(this string json) where T : class,new()
         {
-            #region MyRegion
+            #region Json.NET
             //Newtonsoft.Json.JsonConvert.DeserializeObject<T>(json);
             #endregion
 

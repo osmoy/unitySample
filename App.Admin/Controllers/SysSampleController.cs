@@ -15,9 +15,6 @@ namespace App.Admin.Controllers
     [SupportFilter]
     public class SysSampleController : BaseController
     {
-        /// <summary>
-        /// 业务层注入
-        /// </summary>
         [Dependency]
         public ISysSampleBLL m_BLL { get; set; }
 
@@ -27,7 +24,7 @@ namespace App.Admin.Controllers
         }
 
         [HttpPost]
-        [SupportFilter(ActionName = "Index")]//使用参数，使方法名同步..
+        [SupportFilter(ActionName = "Index")]
         public JsonResult GetList(GridPager pager, string queryStr)
         {
             List<SysSampleModel> list = m_BLL.GetList(ref pager, queryStr);
@@ -58,7 +55,7 @@ namespace App.Admin.Controllers
         [HttpPost]
         public string Create(SysSampleModel model)
         {
-            var errors = Core.Globle.errors;   //全局变量..
+            var errors = Core.Globle.errors;
             if (m_BLL.Create(ref errors, model))
             {
                 //记录操作日志
@@ -121,10 +118,6 @@ namespace App.Admin.Controllers
         }
         #endregion
 
-        /*
-         * 系统菜单栏：http://www.cnblogs.com/ymnets/p/3431057.html
-         * 
-         * **/
 
     }
 }

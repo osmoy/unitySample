@@ -9,12 +9,6 @@ namespace App.DAL
 {
     public class SysRightRepository : IDAL.ISysRightRepository
     {
-        /// <summary>
-        /// 取角色模块的操作权限，用于权限控制
-        /// </summary>
-        /// <param name="accountid">acount Id</param>
-        /// <param name="controller">url</param>
-        /// <returns></returns>
         public List<permModel> GetPermission(string accountid, string controller)
         {
             using (SysMgr_DBEntities db = new SysMgr_DBEntities())
@@ -30,9 +24,6 @@ namespace App.DAL
 
         }
 
-        /// <summary>
-        /// 更新
-        /// </summary>
         public int UpdateRight(SysRightOperateModel model)
         {
             //转换
@@ -41,7 +32,7 @@ namespace App.DAL
             rightOperate.RightId = model.RightId;
             rightOperate.KeyCode = model.KeyCode;
             rightOperate.IsValid = model.IsValid;
-            //判断rightOperate是否存在，如果存在就更新rightOperate,否则就添加一条
+
             using (var db = new SysMgr_DBEntities())
             {
                 SysRightOperate right = db.SysRightOperate.Where(a => a.Id == rightOperate.Id).FirstOrDefault();
@@ -66,12 +57,6 @@ namespace App.DAL
             return 0;
         }
 
-        /// <summary>
-        /// 按选择的角色及模块加载模块的权限项
-        /// </summary>
-        /// <param name="roleId"></param>
-        /// <param name="moduleId"></param>
-        /// <returns></returns>
         public List<P_Sys_GetRightByRoleAndModule_Result> GetRightByRoleAndModule(string roleId, string moduleId)
         {             
             using (var db = new SysMgr_DBEntities())
